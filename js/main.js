@@ -483,4 +483,8 @@ async function freeRoam() {
         .style('font-size', '24px')
         .attr('alignment-baseline','middle')
         .style('fill', 'red')
+    d3.select('#nav_button_text')
+        .remove();
+    d3.select('#nav_button')
+        .remove();
 }
