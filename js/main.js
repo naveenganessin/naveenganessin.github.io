@@ -431,11 +431,11 @@ async function freeRoam() {
     d3.select('#annotation-group').remove();
     d3.select('#downfall_scene_g').remove();
     const data = await d3.csv('Wiki_OfficeData.csv');
-    for (const record in data) {
-        if(data[record]['Season'] == '1') {
-            console.log(data[record]['U.S. viewers (in millions)']);
-        }
-    }
+    // for (const record in data) {
+    //     if(data[record]['Season'] == '1') {
+    //         console.log(data[record]['U.S. viewers (in millions)']);
+    //     }
+    // }
 
     let mouseover = function(d, i) {
         let episodeNumber = i['Prod.'] % 100;
